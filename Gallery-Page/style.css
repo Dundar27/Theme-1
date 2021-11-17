@@ -1,4 +1,4 @@
-@import url("./fonts/SourceSansPro-Black.ttf");
+@import url("./fonts/SourceSansPro-Regular.ttf");
 *{
     overflow-x: hidden;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,6 +9,7 @@ body {
 
     background-image: linear-gradient(to right, #d11476, #ba0b88ee, #81199b, #7227a2, #3232aa);
 }
+    /******************************************************************************************************/
     .navbar{
         margin: 0;
         width: 100%;
@@ -30,24 +31,19 @@ body {
         padding: 0.1rem;
     }
     .navigation ul{
-
         list-style-type: none;
         display: flex;
         padding: 0;
         margin-top: 0;
     } 
     .navigation ul a{
-
         text-align: center;
         text-decoration: none;
-
         padding: 0.8rem;
         margin: auto;
-        /*margin-right: 1.8rem;*/
         color: #d11476;
     }
     .navigation ul a li{
-
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 24px;
     }
@@ -62,18 +58,15 @@ body {
     header{
         width: 90%;
         height: 30%;
-
         margin: auto;
         margin-top: 1.5rem;
         padding: 1rem;
-
         display: flex;
         background-color: #f1f1f1;
     }
     header .content{
         width: 100%;
         padding: 1rem;
-
         text-align: center;
     }
     header .content h1{
@@ -88,7 +81,6 @@ body {
     header .image{
         width: 100%;
         padding: 1rem;
-
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -114,7 +106,6 @@ body {
     header .content .form-box input[type=email]{
         width: 50%;
         margin: auto;
-
         padding: 0.5rem;
         border: 2px solid #d11476;
         color: #d11476;
@@ -140,12 +131,10 @@ body {
     .advertisement{
         width: 90%;
         height: 6rem;
-
         margin: auto;
         margin-top: 2rem;
         margin-bottom: 1rem;
         padding: 1rem;
-
         background-color: #f1f1f1;
     }
     .advertisement .ads{
@@ -153,19 +142,15 @@ body {
         width: 90%;
         height: 100%;
         margin: auto;
-
         display: flex;
     }
     .advertisement .ads span{
         width: auto;
         height: auto;
-        background-color: #d11476;
-        
+        background-color: #d11476;       
         font-size: 24px;
-
         padding: 1rem;
         margin: auto;
-
         border-radius: 10px;
     }
     .advertisement .ads span:hover{
@@ -180,11 +165,9 @@ body {
     /***************************************************************************************************/
     .gallery{
         width: 90%;
-
         margin: auto;
         margin-top: 2rem;
         padding: 1rem;
-
         background-color: #f1f1f1;
         text-align: center;
     }
@@ -195,13 +178,10 @@ body {
     .container {
         display: flex;
         box-sizing: border-box;
-
         width: 92.5%;
         height: 70vh;
-
         margin: auto;
-        padding: 4% 2%;
-        
+        padding: 4% 2%;      
         background-color: #f1f1f1;
     }
     .box {
@@ -211,7 +191,8 @@ body {
         margin: 0 2%;
         box-shadow: 0 20px 30px rgba(0,0,0,.5);
         line-height: 0;
-    } 
+    }
+    .box a{text-decoration: none;} 
     .box > img {
         width: 200%;
         height: calc(100% - 10vh);
@@ -227,23 +208,41 @@ body {
         line-height: 2.6;
         color: #3232aa;
     }   
-    .box:hover { flex: 1 1 50%; }
+    .box:hover { 
+        flex: 1 1 20%; 
+        filter: contrast(110%);
+        box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.867);
+    }
     .box:hover > img {
         width: 100%;
         height: 100%;
     }
     /*****************************************************************************************************/
-      
+    #go-up-link{
+        color: #d11476;
+        margin: auto;
+        position: fixed;
+        bottom: 1rem;
+        right: 1.1rem;
+        z-index: 15;
+    }
+    #go-up-icon:hover{
+        color: #81199b;
+        transition: all 0.8s;
+    }
+    #go-up-icon{
+        background-color: #fff;
+        border: 2px solid #fff;
+        border-radius: 60px;
+    }
+    /*****************************************************************************************************/  
     footer{
         width: 90%;
-
         display: flex;
         justify-content:space-between;
-
         margin: auto;
         margin-top: 2rem;
         padding: 1rem;
-
         background-color: #f1f1f1;
         text-align: center;
     }
@@ -255,9 +254,7 @@ body {
         color:#3232aa;
         font-size: 18px;
     }
-    footer .links ul{
-        text-align: left;
-    }
+    footer .links ul {text-align: left;}
     footer .links ul li{
         list-style:outside;
         color: #d11476;
@@ -266,22 +263,16 @@ body {
     footer .links ul li a{
         color: #d11476;
         text-decoration: underline;
-
         font-size: large;
         font-weight: 500;
     }
     footer p{
         color: #d11476;
-
         font-size: large;
         font-weight: 500;
     }
-    footer .social-media a{
-        text-decoration: none;
-    }
-    footer .social-media i{
-        color: #d11476;
-    }
+    footer .social-media a {text-decoration: none;}
+    footer .social-media i {color: #d11476;}
     footer .mail-box .form-box label{
         color: #d11476;
         font-size: 18px;
@@ -291,7 +282,6 @@ body {
     footer .mail-box .form-box input[type=email]{
         width: 50%;
         margin: auto;
-
         padding: 0.5rem;
         border: 2px solid #d11476;
         color: #d11476;
@@ -300,7 +290,6 @@ body {
     footer .mail-box .form-box button{
         width: auto;
         margin: auto;
-
         padding: 0.6rem;
         background-color: #3232aa;
         color: #fff;
@@ -317,12 +306,10 @@ body {
         width: 80%;
         margin: auto;
         padding: 1rem;
-
         background-color: #3232aa;
         color: white;
         border: none;
         box-shadow: 0px 3px 5px #3232aa;
-
         font-size: large;
         font-weight: 500;
     }
@@ -335,179 +322,109 @@ body {
     /*****************************************************************************************************/
     
 @media screen and (min-width:320px ) and (max-width: 480px){  
-    .navigation{
-        width: 100%;
-        padding: 0;
+    .navigation,
+    .advertisement,
+    .gallery,
+    .container,
+    header,footer {width: 100%;}
+
+    .navigation,
+    .advertisement,
+    .gallery,
+    header,footer,
+    footer .links ul {padding: 0;}
+
+    .advertisement,
+    .gallery,
+    .container,
+    footer {margin-top: 1rem;}
+
+    header,
+    header .image,
+    footer {display: block;}
+
+    header .content,
+    header .image {width: 90%;}
+
+    header .content,
+    header .image,
+    header .content .form-box button,
+    footer .contact button {margin: auto;}
+
+    header .content,
+    header .image,
+    footer .contact button,
+    footer div {padding: 0.5rem;}
+
+    header .content .form-box input[type=email],
+    footer .contact button {width: 60%;}
+
+    .navigation{ 
         padding-top: 0.5rem;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-    .advertisement{
-        width: 100%;
-        height: 8rem;
-        margin: 0;
-        margin-top: 1rem; 
-        padding: 0;       
-    }
-    .gallery{
-        width: 100%;
-        padding: 0;
-        margin-top: 1rem;
-    }
-    .container{
-        width: 100%;
-        height: 50vh;
-        margin-top: 1rem;
-        overflow-x:visible;
-    }
-    .container .box:last-child{
-        display: none;
-    }
-    header{
-        width: 100%;
-        height: auto;
+    .advertisement {height: 8rem;}
+    .container {height: 50vh; overflow-x:visible;}
+    .container .box:last-child {display: none;}
 
-        padding: 0;
-        padding-top: 1rem;
-        display: block;
-    }
-    header .content{
-        width: 90%;
-        margin: auto;
-        padding: 0.5rem;
+    header {height: auto; padding-top: 1rem;}
+    header .content {text-align: left;}
+    header .content h1 {font-size: 32px;}
+    header .image {height: 30%;}
+    header .content .form-box {padding: 1rem;}
+    header .content .form-box input[type=email] {border: 1px solid #d11476;}
+    header .content .form-box button {width: 30%;}
 
-        text-align: left;
-    }
-    header .content h1{
-        font-size: 32px;
-    }
-    header .image{
-        width: 90%;
-        height: 30%;
-        margin: auto;
-        padding: 0.5rem;
-
-        display: block;
-    }
-    header .content .form-box{
-        padding: 1rem;
-    }
-    header .content .form-box input[type=email]{
-        width: 60%;
-        border: 1px solid #d11476;
-    }
-    header .content .form-box button{
-        width: 30%;
-        margin: auto;
-    }
-    footer{
-        width: 100%;
-
-        display: block;
-        margin-top: 1rem;
-        padding: 0;
-    }
-    footer div{     
-        padding: 0.5rem;
-    }
-    footer .links ul{
-        text-align: center;
-        padding: 0;
-    }
-    footer .links ul li{
-        list-style: none;
-    }
-    footer .contact button{
-        width: 60%;
-        margin: auto;
-        padding: 0.5rem;
-    }
+    footer .links ul {text-align: center;}
+    footer .links ul li {list-style: none;}
+    
 }
 @media screen and (min-width:481px) and (max-width: 768px){  
-    .navigation{
-        width: 90%;
-        padding: 1rem;
+    .navigation,
+    header .image,
+    header .content,
+    footer {width: 90%;}
 
+    header, 
+    header.image {display: block;}
+
+    header .content,
+    header .image,
+    footer div,
+    footer .contact button {padding: 0.5rem; margin: auto;}
+
+    header .content,
+    footer .links ul {text-align: center;}
+    
+    .navigation{  
+        padding: 1rem;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-    .navigation ul a li{
-        font-size: 28px;
-    }
-    .container{
-        height: 80vh;
-    }
-    .container .box:last-child{
-        display: none;
-    }
-    header{
-        display: block;
-    }
-    header .content{
-        width: 90%;
-        margin: auto;
-        padding: 0.5rem;
-
-        text-align: center;
-    }
-    header .image{
-        width: 90%;
-        height: 20%;
-        margin: auto;
-        padding: 0.5rem;
-
-        display: block;
-    }
-    header .content .form-box{
-        padding: 1.5rem;
-    }
-    footer{
-        width: 90%;
-
-        display: block;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-    footer div{     
-        padding: 0.5rem;
-    }
-    footer .links ul{
-        text-align: center;
-        padding: 0;
-    }
-    footer .links ul li{
-        list-style: none;
-    }
-    footer .contact button{
-        width: 60%;
-        margin: auto;
-        padding: 0.5rem;
-    }
+    .navigation ul a li {font-size: 28px;}
+    .container {height: 80vh;}
+    .container .box:last-child {display: none;}
+    header .image {height: 20%;}
+    header .content .form-box {padding: 1.5rem;}
+    footer {display: block; margin-top: 1rem; padding: 1rem;}
+    footer .links ul {padding: 0;}
+    footer .links ul li {list-style: none;}
+    footer .contact button {width: 60%;}
 }
 @media screen and (min-width:769px) and (max-width: 1023px){  
+    header .image, 
+    header .image img{width: 100%;}
+
     .navigation{
         width: 40%;
-
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
-    .navigation ul a li{
-        font-size: 30px;
-    }
-    header .image{
-        width: 100%;
-        justify-content: flex-start;
-    }
-    header .image img{
-        width: 100%;
-        height: 60%;
-    }
-    header .content{
-        height: 60%;
-    }
-    .container .box:last-child{
-        display: none;
-    }
+    .navigation ul a li {font-size: 30px;}
+    header .image {justify-content: flex-start;}
+    .container .box:last-child {display: none;}
+    footer .mail-box .form-box button {margin-top: 1rem;}
 }
 @media screen and (min-width:1024px){  
     .navigation{
@@ -516,13 +433,11 @@ body {
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
-    .navigation ul a li{
-        font-size: 34px;
-    }
-    .advertisement{
-        height: 8rem;
-    }
-    .container{
-        height: 90vh;
-    }
+    .navigation ul a li {font-size: 34px;}
+    .advertisement {height: 8rem;}
+    .container {height: 90vh;}
 }
+
+/*
+    
+*/

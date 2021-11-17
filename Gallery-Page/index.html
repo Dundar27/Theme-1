@@ -5,17 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--Contains some important seo components -->
         <title>The Best Gallery</title>
         <meta name="keywords" content="Gallery, The Best Photo">
         <meta name="description" content="Photo, Image, Gallery">
 
+        <!--Path to linked pages-->
         <link rel="stylesheet" href="./style.css">
         <!--Font Awesome-->    
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
             integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
-        <script src="./script.js"></script>
     </head>
     <body>
+        <!--
+            Top navigation bar of the page, Don't forget to give way to linked pages.
+            You can change the icons according to your need.
+        -->
         <nav class="navbar" id="navbar">
             <div class="navigation">
                 <ul>
@@ -35,6 +40,7 @@
             </div>
         </nav>
 
+        <!--A tailor-made entry for your visitors. Edit the content text yourself-->
         <header>
             <div class="image">
                 <img src="https://source.unsplash.com/800x480">
@@ -51,14 +57,15 @@
                     <div class="form-box">
                         <form action="">
                             <label for="">Subscribe to get the latest photos</label> <br> <br>
-                        <input type="email" name="" id="" value="E-mail">
-                        <button type="submit">Subscribe</button>
+                            <input type="email" name="" id="" value="E-mail">
+                            <button type="submit">Subscribe</button>
                         </form>
                     </div>
                 </div>                
             </div>
         </header>
 
+        <!--Some special ad spaces. The design is ours, the content is yours.-->
         <div class="advertisement">
             <div class="ads">
                 <span>
@@ -67,6 +74,7 @@
             </div>
         </div> 
 
+        <!--A small gallery prepared for your visitors. The images are refreshed each time the page is refreshed.-->
         <div class="gallery">
             <h2>Gallery</h2>
             <div class="container">
@@ -113,6 +121,7 @@
             </div>
         </div>
 
+        <!--Some special ad spaces. The design is ours, the content is yours.-->
         <div class="advertisement">
             <div class="ads">
                 <span>
@@ -120,7 +129,13 @@
                 </span>
             </div>
         </div> 
-         
+
+        <!--Go up button. Increases user experience-->
+        <a href="#navbar" id="go-up-link">
+            <i id="go-up-icon" class="fas fa-arrow-alt-circle-up fa-4x"></i>
+        </a>
+
+        <!--End of page. Adjust the content in the footer according to you.-->
         <footer>
             <div class="links">
                 <h5>Links</h5>
@@ -147,15 +162,17 @@
             <div class="mail-box">
                 <h5>Subscribe</h5>
                 <div class="form-box">
-                    <label for="">Subscribe to get the latest photos</label> <br> <br>
-                    <input type="email" name="" id="" value="E-mail">
-                    <button>Subscribe</button>
+                    <form action="">
+                        <label for="">Subscribe to get the latest photos</label> <br> <br>
+                        <input type="email" name="" id="" value="E-mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="contact">
                 <h5>Contact us</h5>
                 <p>I have questions? Contact us now and let us answer your questions.</p>
-                <button>Call</button>
+                <a href="#"><button>Call</button></a>
             </div>
         </footer>
     </body>
